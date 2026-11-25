@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Majestic Meadows – Premium Villa Plots, Kelamangalam, Hosur</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Hanken+Grotesk:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#0a1f19;--bg2:#10302590;--surface:#164236;--ink:#fffaf0;--mute:#e3ebdc;--gold:#f0b93a;--gold2:#ffd978;--line:#f0b93a66;--serif:"Cormorant Garamond",Georgia,serif;--sans:"Hanken Grotesk",system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1f19;--ink:#f3ecd9;--surface:#12332a}}
+:root[data-theme="dark"]{--bg:#0a1f19;--ink:#f3ecd9;--surface:#12332a}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--sans);overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.05;margin:0}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;display:flex;align-items:center;justify-content:space-between;padding:14px clamp(16px,4vw,48px);background:#0a1f19cc;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--serif);font-size:1.4rem;font-weight:700;color:var(--gold2)}
+nav{display:flex;gap:22px;font-size:.95rem}
+nav a{color:var(--mute)}nav a:hover{color:var(--gold2)}
+.btn{display:inline-block;padding:13px 26px;border-radius:2px;background:var(--gold);color:#1a1405;font-weight:700;border:0;cursor:pointer;font:700 1rem var(--sans);transition:transform .2s,background .2s}
+.btn:hover{background:var(--gold2);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--gold)}
+@media(max-width:820px){nav{display:none}}
+/* hero */
+.hero{position:relative;min-height:100svh;margin-top:-62px;display:grid;align-items:end;overflow:hidden;background:linear-gradient(#0b1d3a,#3a3a6a 42%,#d98b5a 68%,#f0c27a 78%)}
+.hero svg{position:absolute;inset:0;width:100%;height:100%}
+.layer{will-change:transform}
+.win{fill:#2a2a3a;animation:glow 1.4s forwards}
+@keyframes glow{to{fill:#ffd98a;filter:drop-shadow(0 0 4px #ffcf6b)}}
+.star{animation:tw 3s infinite alternate}@keyframes tw{to{opacity:.2}}
+.hero-copy{position:relative;z-index:2;padding:0 clamp(18px,6vw,90px) clamp(40px,9vh,90px);max-width:900px;animation:rise 1.6s .3s both}
+@keyframes rise{from{opacity:0;transform:translateY(40px)}}
+.hero h1{font-size:clamp(3rem,10vw,7.5rem);letter-spacing:-.01em;text-shadow:0 4px 40px #0008}
+.hero p{font-size:1.2rem;max-width:560px;margin:18px 0 28px;color:#fff;text-shadow:0 2px 14px #0009}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.badge{border:1px solid var(--gold2);padding:5px 14px;border-radius:99px;font-size:.85rem;background:#0a1f1999;color:var(--gold2)}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.price-float{position:absolute;right:clamp(16px,5vw,70px);top:22%;z-index:2;text-align:right;background:#0a1f1999;backdrop-filter:blur(8px);border:1px solid var(--gold);padding:16px 22px;animation:rise 1.6s .9s both}
+.price-float b{display:block;font:700 clamp(2.2rem,5vw,3.6rem)/1 var(--serif);color:var(--gold2)}
+.price-float span{font-size:.85rem;color:var(--mute)}
+@media(max-width:700px){.price-float{top:14%}}
+section{padding:clamp(70px,11vw,140px) clamp(18px,6vw,90px)}
+.wrap{max-width:1180px;margin:0 auto}
+h2{font-size:clamp(2.2rem,5vw,4rem);margin-bottom:18px}
+.lead{color:var(--mute);max-width:640px}
+.reveal{opacity:0;transform:translateY(30px);transition:1s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border-block:1px solid var(--line);padding:0}
+.stats div{background:var(--bg);padding:34px 20px;text-align:center}
+.stats b{font:700 3rem/1 var(--serif);color:var(--gold2);display:block}
+.stats span{color:var(--mute);font-size:.9rem}
+/* about */
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,6vw,80px);align-items:center}
+@media(max-width:820px){.split{grid-template-columns:1fr}}
+.pillars{display:grid;gap:18px}
+.pillars div{border-left:2px solid var(--gold);padding-left:18px}
+.pillars h3{font-size:1.5rem;color:var(--gold2)}
+.pillars p{margin:4px 0 0;color:var(--mute)}
+/* amenities */
+.am{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:2px;margin-top:40px}
+.am div{padding:26px 20px;background:var(--surface);transition:background .3s,transform .3s}
+.am div:hover{background:#1b4a3c;transform:scale(1.03)}
+.am svg{width:34px;height:34px;stroke:var(--gold2);fill:none;stroke-width:1.5;margin-bottom:10px}
+.am h3{font:700 1.05rem var(--sans)}
+.am p{margin:4px 0 0;font-size:.9rem;color:var(--mute)}
+/* pricing */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:40px}
+.card{border:1px solid var(--line);padding:34px 28px;background:linear-gradient(160deg,var(--surface),var(--bg));position:relative;transition:border-color .3s,transform .3s}
+.card:hover{border-color:var(--gold);transform:translateY(-6px)}
+.card.hot{border-color:var(--gold)}
+.card small{color:var(--gold2)}
+.card .p{font:700 3.2rem/1.1 var(--serif);margin:10px 0}
+.card .p sup{font-size:1.2rem}
+.card ul{padding-left:18px;color:var(--mute);margin:0 0 22px}
+/* location */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:30px 0 20px}
+.tab{background:transparent;border:1px solid var(--line);color:var(--mute);padding:10px 20px;cursor:pointer;font:500 .95rem var(--sans);border-radius:99px;transition:.2s}
+.tab[aria-selected="true"]{background:var(--gold);color:#1a1405;border-color:var(--gold)}
+.list{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.list div{display:flex;justify-content:space-between;gap:10px;padding:14px 18px;background:var(--surface);animation:fade .5s both}
+@keyframes fade{from{opacity:0;transform:translateX(-14px)}}
+.list b{color:var(--gold2);white-space:nowrap}
+/* emi */
+.emi{display:grid;grid-template-columns:1fr 1fr;gap:40px;background:var(--surface);padding:clamp(24px,5vw,56px);border:1px solid var(--line)}
+@media(max-width:820px){.emi{grid-template-columns:1fr}}
+label{display:block;margin:0 0 18px;font-size:.9rem;color:var(--mute)}
+label output{float:right;color:var(--gold2);font-weight:700}
+input[type=range]{width:100%;accent-color:var(--gold)}
+.res{text-align:center;align-self:center}
+.res b{font:700 4rem/1 var(--serif);color:var(--gold2);display:block}
+/* form */
+form{display:grid;gap:14px;max-width:560px}
+input,select,textarea{width:100%;padding:14px;background:var(--surface);border:1px solid var(--line);color:var(--ink);font:inherit;border-radius:2px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+@media(max-width:820px){.contact{grid-template-columns:1fr}}
+.ph a{display:block;font:700 2rem/1.4 var(--serif);color:var(--gold2)}
+footer{padding:30px clamp(18px,6vw,90px);border-top:1px solid var(--line);color:var(--mute);font-size:.9rem;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.wa{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:55;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 6px 24px #0008;animation:pulse 2.4s infinite}
+.wa svg{width:30px;fill:#fff}
+@keyframes pulse{50%{box-shadow:0 0 0 14px #25d36633}}
+.dl{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px;margin-top:34px}
+.doc{display:flex;flex-direction:column;gap:6px;padding:22px;background:var(--surface);border:1px solid var(--line)}
+.doc h3{font:700 1.15rem var(--sans)}.doc small{color:var(--mute)}
+.doc .row{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.doc .btn{padding:9px 18px;font-size:.9rem}
+.admin{margin-top:30px;padding:24px;border:1px dashed var(--gold);display:none}
+.admin.on{display:block}.admin form{max-width:none;grid-template-columns:1fr 1fr;align-items:end}
+.admin form>*{min-width:0}@media(max-width:700px){.admin form{grid-template-columns:1fr}}
+.msg{color:var(--mute);margin-top:12px}
+body{font-size:18px}
+nav a{color:var(--ink);font-weight:500;position:relative}
+nav a::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:2px;background:var(--gold);transition:width .3s}nav a:hover::after{width:100%}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,#06140f88 0%,#06140f00 30%,#06140fcc 78%,#06140fee 100%)}
+.hero-copy,.price-float{z-index:2}
+.hero h1{background:linear-gradient(100deg,#fffaf0 20%,#ffd978 45%,#fffaf0 70%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 4px 22px #000a);animation:shine 7s linear infinite}
+@keyframes shine{to{background-position:-220% 0}}
+.hero p{font-size:1.25rem;font-weight:500;color:#fffaf0}
+.badge{background:#06140fcc;color:var(--gold2);border-color:var(--gold);font-weight:500}
+.price-float{background:#06140fdd;border:2px solid var(--gold);box-shadow:0 0 40px #f0b93a44}
+.price-float b{color:var(--gold2);text-shadow:0 0 24px #f0b93a88}
+.btn{background:linear-gradient(135deg,#ffd978,#f0b93a 55%,#d99a1e);color:#171000;box-shadow:0 8px 26px #f0b93a44;letter-spacing:.2px}
+.btn:hover{box-shadow:0 12px 34px #f0b93a88;background:linear-gradient(135deg,#ffe49a,#ffc94d)}
+.btn.ghost{background:#06140f66;color:var(--gold2);border:2px solid var(--gold);box-shadow:none}
+.btn.ghost:hover{background:var(--gold);color:#171000}
+h2{color:#fffaf0}
+h2::after{content:"";display:block;width:70px;height:4px;margin-top:14px;background:linear-gradient(90deg,var(--gold),transparent);border-radius:2px}
+.stats b{font-size:3.6rem;color:var(--gold2);text-shadow:0 0 28px #f0b93a55}
+.stats div{background:linear-gradient(180deg,#10372c,var(--bg))}
+.am div,.doc,.list div{background:linear-gradient(160deg,#1a4a3d,#123529);border:1px solid #f0b93a33}
+.am div:hover{background:linear-gradient(160deg,#236152,#17443a);box-shadow:0 12px 30px #0006;border-color:var(--gold)}
+.am svg{stroke:var(--gold);stroke-width:1.8}
+.am h3,.doc h3{color:#fffaf0}
+.card{background:linear-gradient(160deg,#1c5242,#0f2d24);border:1px solid #f0b93a55}
+.card.hot{border:2px solid var(--gold);box-shadow:0 0 44px #f0b93a33}
+.card .p{color:var(--gold2)}.card small{font-weight:700;color:var(--gold)}
+.card ul{color:var(--ink)}
+.pillars div{border-left:4px solid var(--gold)}
+.tab{color:var(--ink);border:2px solid var(--line)}
+.tab[aria-selected="true"]{background:var(--gold);color:#171000;box-shadow:0 6px 18px #f0b93a44}
+input,select,textarea{background:#0f2d24;border:1px solid #f0b93a88;color:#fffaf0;font-size:1rem}
+::placeholder{color:#c9d6c4}
+.emi{background:linear-gradient(160deg,#1a4a3d,#0f2d24);border:1px solid var(--gold)}
+footer{color:var(--mute);background:#06140f}
+#amenities{background:linear-gradient(var(--bg),#0f3a2e,var(--bg))!important}#location{background:#0d3126!important}
+.mapbox{display:grid;grid-template-columns:minmax(260px,380px) 1fr;gap:clamp(20px,4vw,50px);align-items:center;margin-top:50px;padding:clamp(18px,4vw,40px);border:2px solid var(--gold);background:linear-gradient(160deg,#1a4a3d,#0b241c)}
+.mapbox svg{width:100%;height:auto;background:#0a1f19;border:1px solid var(--line)}
+.mapbox svg{display:none}.mapbox iframe{width:100%;height:380px;border:0}.mapinfo h3{font-size:2.2rem;color:var(--gold2);margin-bottom:10px}
+@media(max-width:760px){.mapbox{grid-template-columns:1fr}}
+.mapinfo .cta{flex-direction:column;align-items:stretch;margin-top:18px}.mapinfo .btn{text-align:center;font-size:1.1rem;padding:16px 24px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.win{fill:#ffd98a}}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#top">Majestic Meadows</a>
+  <nav><a href="#about">About</a><a href="#amenities">Amenities</a><a href="#pricing">Pricing</a><a href="#location">Location</a><a href="#map">Map</a><a href="#documents">Documents</a><a href="#emi">EMI</a></nav>
+  <a class="btn" href="#contact">Book a site visit</a>
+</header>
+
+<main id="top">
+<div class="hero">
+  <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice" aria-hidden="true" id="scene">
+    <g class="layer" data-s="0.02" id="stars"></g>
+    <circle class="layer" data-s="0.05" cx="1180" cy="560" r="90" fill="#ffe3a3" opacity=".85"/>
+    <g class="layer" data-s="0.08"><path d="M0 640 Q250 520 480 610 T900 590 T1300 580 T1600 610 V900H0Z" fill="#4a4a6e"/></g>
+    <g class="layer" data-s="0.14"><path d="M0 700 Q300 620 600 690 T1200 670 T1600 700 V900H0Z" fill="#1f4a3c"/></g>
+    <g class="layer" data-s="0.22" id="villas"></g>
+    <g class="layer" data-s="0.32"><path d="M0 800 Q400 770 800 800 T1600 790 V900H0Z" fill="#0d2a21"/><path d="M0 860 H1600 V900 H0Z" fill="#1b1b24"/><path d="M0 880 H1600" stroke="#d4aa5e" stroke-width="3" stroke-dasharray="60 50" opacity=".7"/></g>
+  </svg>
+  <div class="price-float"><span>Premium plots from</span><b>₹19.5 Lakhs</b><span>HNTDA &amp; RERA approved</span></div>
+  <div class="hero-copy">
+    <div class="badges"><span class="badge">HNTDA approved</span><span class="badge">RERA approved</span><span class="badge">Hosur–Salem Highway</span></div>
+    <h1>Live grand.<br>Live green.</h1>
+    <p>Gated villa plots and 2, 3 BHK duplex villas in Kelamangalam, Hosur. Build a home that gives your family comfort, safety and pride.</p>
+    <div class="cta"><a class="btn" href="#pricing">See plots &amp; villas</a><a class="btn ghost" href="#map">View location</a><a class="btn ghost" href="tel:+919655302401">Call 96553 02401</a></div>
+  </div>
+</div>
+
+<section class="stats reveal">
+  <div><b data-n="30">0</b><span>Ft wide RCC roads</span></div>
+  <div><b data-n="19.5">0</b><span>Lakhs, plots start</span></div>
+  <div><b data-n="24">0</b><span>Hours security (24x7)</span></div>
+  <div><b data-n="3">0</b><span>Min to Kelamangalam bus &amp; rail</span></div>
+</section>
+
+<section id="about"><div class="wrap split">
+  <div class="reveal"><h2>A place your family will thank you for.</h2>
+  <p class="lead">Majestic Meadows by Sri Mahalakshmi Developers and Builders, presented by Golden Gate Properties, is a fully compounded villa community on the Kelamangalam to Hosur road. Buy an individual plot and build your own dream home, or choose a ready simplex or duplex villa.</p>
+  <p class="lead">Your land. Your future. Your investment.</p></div>
+  <div class="pillars reveal">
+    <div><h3>Green surroundings</h3><p>Avenue plantation, a tree in every plot and a developed greenery park.</p></div>
+    <div><h3>Safe community</h3><p>Gated entrance arch, compound wall, CCTV and 24/7 security.</p></div>
+    <div><h3>Long-term value</h3><p>Legal, approved plots in a fast-growing industrial corridor.</p></div>
+  </div>
+</div></section>
+
+<section id="amenities" style="background:linear-gradient(var(--bg),#0d281f,var(--bg))"><div class="wrap">
+  <h2 class="reveal">World-class amenities</h2>
+  <p class="lead reveal">Everything is built and installed before you move in.</p>
+  <div class="am reveal" id="amgrid"></div>
+</div></section>
+
+<section id="pricing"><div class="wrap">
+  <h2 class="reveal">Choose how you want to build</h2>
+  <p class="lead reveal">Prices are starting prices. Call for current availability and plot sizes.</p>
+  <div class="cards reveal">
+    <div class="card"><small>Individual premium villa plots</small><div class="p"><sup>₹</sup>19.5 L</div><ul><li>Build your own design</li><li>Individual water connection</li><li>3-phase EB connection</li></ul><a class="btn ghost" href="#contact">Enquire</a></div>
+    <div class="card hot"><small>Simplex villa</small><div class="p"><sup>₹</sup>59 L</div><ul><li>2, 3 BHK homes</li><li>Gated community living</li><li>Ready to move in</li></ul><a class="btn" href="#contact">Enquire</a></div>
+    <div class="card"><small>Duplex villa</small><div class="p"><sup>₹</sup>75 L</div><ul><li>2, 3 BHK duplex homes</li><li>Terrace and balcony</li><li>Premium elevation</li></ul><a class="btn ghost" href="#contact">Enquire</a></div>
+  </div>
+</div></section>
+
+<section id="location" style="background:#0d281f"><div class="wrap">
+  <h2 class="reveal">Close to everything that matters</h2>
+  <p class="lead reveal">Drive times from Majestic Meadows.</p>
+  <div class="tabs" role="tablist" id="tabs"></div>
+  <div class="list" id="list"></div>
+  <div class="mapbox reveal" id="map"><iframe title="Majestic Meadows on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=12.6113469,77.8555937&z=16&output=embed"></iframe>
+    <svg viewBox="0 0 360 400" role="img" aria-label="Route schematic from Electronic City to Majestic Meadows">
+      <path d="M180 40 L180 130 L200 210 L170 290 L150 340" fill="none" stroke="#f0b93a" stroke-width="5" stroke-dasharray="2 12" stroke-linecap="round"/>
+      <path d="M40 250 Q200 200 330 260" fill="none" stroke="#fffaf055" stroke-width="3"/><text x="236" y="236" fill="#e3ebdc" font-size="12">STRR Ring Road</text>
+      <g font-size="14" fill="#fffaf0"><circle cx="180" cy="40" r="8" fill="#ffd978"/><text x="196" y="38">Electronic City</text><text x="196" y="56" fill="#e3ebdc" font-size="12">45 min</text>
+      <circle cx="180" cy="130" r="8" fill="#ffd978"/><text x="196" y="128">Attibele</text><text x="196" y="146" fill="#e3ebdc" font-size="12">25 min</text>
+      <circle cx="200" cy="210" r="8" fill="#ffd978"/><text x="216" y="214" font-size="13">Hosur Railway Stn · 12 min</text>
+      <circle cx="170" cy="290" r="10" fill="#f0b93a" stroke="#fff" stroke-width="3"/><text x="60" y="282" font-weight="700" fill="#ffd978">Majestic Meadows</text>
+      <circle cx="150" cy="340" r="8" fill="#ffd978"/><text x="166" y="344">Kelamangalam · 3 min</text></g>
+    </svg>
+    <div class="mapinfo">
+      <h3>Find us</h3>
+      <p class="lead">Opp. Registered Office Kelamangalam, Kelamangalam to Hosur Road, Hosur.</p>
+      <p class="msg">Route diagram is a guide, not to scale. Use Google Maps for the exact way.</p>
+      <div class="cta"><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=12.6113469,77.8555937">Get directions</a><a class="btn ghost" target="_blank" rel="noopener" href="https://maps.app.goo.gl/3BrAVaKrxDekPmwt8">Open in Google Maps</a><a class="btn ghost" target="_blank" rel="noopener" href="https://wa.me/?text=Majestic%20Meadows%20location%3A%20https%3A%2F%2Fmaps.app.goo.gl%2F3BrAVaKrxDekPmwt8">Share location on WhatsApp</a></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="documents"><div class="wrap">
+  <h2 class="reveal">Land documents</h2>
+  <p class="lead reveal">Check the approvals and legal papers before you decide. Download any document for free.</p>
+  <div class="dl" id="dl"><p class="msg">Loading documents…</p></div>
+  <div class="admin" id="admin">
+    <h3>Owner panel: add documents (up to 10)</h3>
+    <p class="msg">Only you see this panel. PDF, JPG or PNG, up to 20 MB each.</p>
+    <form id="up">
+      <input id="dt" placeholder="Document name, e.g. HNTDA approval" required>
+      <input id="df" type="file" accept=".pdf,.jpg,.jpeg,.png" required>
+      <button class="btn" type="submit" id="ub">Upload document</button>
+      <span class="msg" id="um"></span>
+    </form>
+  </div>
+</div></section>
+
+<section id="emi"><div class="wrap">
+  <h2 class="reveal">Plan your budget</h2>
+  <div class="emi reveal">
+    <div>
+      <label>Property price <output id="o1"></output><input type="range" id="price" min="1950000" max="9000000" step="50000" value="5900000"></label>
+      <label>Down payment <output id="o2"></output><input type="range" id="down" min="10" max="60" step="5" value="20"></label>
+      <label>Interest rate <output id="o3"></output><input type="range" id="rate" min="7" max="12" step="0.1" value="8.8"></label>
+      <label>Tenure <output id="o4"></output><input type="range" id="yrs" min="5" max="30" step="1" value="20"></label>
+    </div>
+    <div class="res"><span>Estimated monthly EMI</span><b id="emi-out">–</b><small style="color:var(--mute)">An estimate only. Your bank’s offer will differ.</small></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+  <div class="reveal"><h2>Book your site visit</h2>
+    <p class="lead">Tell us what you need. We will continue on WhatsApp with plot details and a visit time.</p>
+    <form id="f">
+      <input name="n" placeholder="Your name" required autocomplete="name">
+      <input name="p" type="tel" placeholder="Phone number" required autocomplete="tel">
+      <select name="t"><option>Villa plot</option><option>Simplex villa</option><option>Duplex villa</option></select>
+      <textarea name="m" rows="3" placeholder="Anything we should know?"></textarea>
+      <button class="btn" type="submit">Send on WhatsApp</button>
+    </form></div>
+  <div class="ph reveal"><h2>Talk to us</h2>
+    <a href="tel:+919655302401">96553 02401</a><a href="tel:+917418721233">74187 21233</a><a href="tel:+919597847177">95978 47177</a>
+    <p class="lead">Opp. Registered Office Kelamangalam,<br>Kelamangalam to Hosur Road.</p>
+    <a class="btn ghost" style="font:700 1rem var(--sans)" target="_blank" rel="noopener" href="https://maps.app.goo.gl/3BrAVaKrxDekPmwt8">Open in Maps</a></div>
+</div></section>
+</main>
+
+<footer><span>© Majestic Meadows. Sri Mahalakshmi Developers and Builders · Golden Gate Properties</span><span>HNTDA &amp; RERA approved project. Images are artist impressions.</span></footer>
+
+<a class="wa" href="https://wa.me/919655302401?text=Hi%2C%20I%20am%20interested%20in%20Majestic%20Meadows" aria-label="Chat on WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.800 14.200c-.2.700-1.400 1.300-2 1.400-.5.100-1.200.100-1.900-.1-.4-.1-1-.3-1.700-.6-3-1.300-4.900-4.300-5-4.500-.1-.2-1.200-1.600-1.200-3s.8-2.100 1-2.400c.3-.3.600-.3.800-.3h.6c.2 0 .4 0 .6.500l.8 2c.1.200.1.400 0 .5l-.4.600-.3.300c-.1.200-.3.300-.1.600.2.300.7 1.200 1.500 1.900 1 .9 1.900 1.200 2.200 1.300.3.100.4.100.6-.1l.8-1c.2-.3.400-.2.600-.1l1.900.9c.3.100.5.200.6.300.1.200.1.800-.1 1.500z"/></svg></a>
+
+<script>
+const $=s=>document.querySelector(s),NS="http://www.w3.org/2000/svg";
+function el(t,a,p){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e}
+// stars
+const st=$("#stars");for(let i=0;i<60;i++){const c=el("circle",{cx:Math.random()*1600,cy:Math.random()*380,r:Math.random()*1.6+.4,fill:"#fff",class:"star"},st);c.style.animationDelay=Math.random()*3+"s"}
+// villas
+const v=$("#villas");
+[[80,1],[330,.9],[600,1.05],[880,.9],[1150,1],[1390,.95]].forEach(([x,s],i)=>{
+  const g=el("g",{transform:`translate(${x} ${690-60*s+40}) scale(${s})`},v);
+  el("rect",{x:0,y:30,width:190,height:110,fill:"#eee6d3"},g);
+  el("rect",{x:20,y:0,width:120,height:40,fill:"#3d4f6b"},g);
+  el("rect",{x:10,y:24,width:150,height:8,fill:"#fff"},g);
+  el("rect",{x:0,y:110,width:190,height:30,fill:"#8a5a3a"},g);
+  [[22,50],[100,50],[22,82],[100,82]].forEach(([wx,wy],j)=>{const w=el("rect",{x:wx,y:wy,width:48,height:22,class:"win"},g);w.style.animationDelay=(.8+i*.35+j*.12)+"s"});
+});
+// parallax
+const L=[...document.querySelectorAll(".layer")];
+addEventListener("scroll",()=>{const y=scrollY;L.forEach(l=>l.style.transform=`translateY(${y*l.dataset.s}px)`)},{passive:true});
+// amenities
+const A=[["Gated community","Grand entrance arch","M4 21V9l8-6 8 6v12M9 21v-7h6v7"],["30 ft RCC roads","Wide cement concrete roads","M8 3L3 21M16 3l5 18M12 4v3M12 11v3M12 18v3"],["3-phase EB","Electric supply and street lights","M12 2v20M5 6h14M7 11h10M9 16h6"],["Tree in every plot","Avenue plantation","M12 22v-8M7 14a5 5 0 1 1 3-9 4 4 0 0 1 7 3 4 4 0 0 1-2 6z"],["Children’s park","Dedicated play area","M4 21V8l8-5 8 5v13M9 21v-6h6v6"],["Underground drainage","Clean, covered system","M3 8h18M6 8v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8M9 12v5M15 12v5"],["Individual water","OHT and a connection per plot","M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"],["CCTV and 24/7 security","Always watched","M2 8l13-4 2 5-13 4zM15 9l5 2M8 15v6"],["Compound wall","Fully compounded layout","M3 20V9h4v3h4V9h4v3h4V9h-0v11z"],["Greenery park","Beautifully developed","M3 20h18M7 20c0-6 2-9 5-12 3 3 5 6 5 12"]];
+$("#amgrid").innerHTML=A.map(a=>`<div><svg viewBox="0 0 24 24"><path d="${a[2]}"/></svg><h3>${a[0]}</h3><p>${a[1]}</p></div>`).join("");
+// location
+const D={Schools:[["St. Thomas School","2 min"],["Seventh Day School","5 min"],["Nalanda School","10 min"],["Nimai School","15 min"],["Hosur Public School","15 min"],["Chaitanya School","15 min"]],Hospitals:[["Government Hospital","5 min"],["Malar Hospital","12 min"],["Gunam Hospital","15 min"],["Cauvery Hospital","15 min"]],"Work places":[["TVS Logistics","2 min"],["Duroflex Logistics","5 min"],["FIEM Industries","7 min"],["Supreme Pipes","7 min"],["Tata Electronics","15 min"],["TVS Company","15 min"],["Ashok Leyland","20 min"]],Connectivity:[["Kelamangalam Bus Stand","3 min"],["Kelamangalam Railway Station","3 min"],["STRR Ring Road","5 min"],["Hosur Railway Station","12 min"],["Attibele, Bangalore","25 min"],["Electronic City, Bangalore","45 min"]]};
+const tb=$("#tabs");
+function show(k){[...tb.children].forEach(b=>b.setAttribute("aria-selected",b.textContent===k));$("#list").innerHTML=D[k].map((r,i)=>`<div style="animation-delay:${i*60}ms"><span>${r[0]}</span><b>${r[1]}</b></div>`).join("")}
+Object.keys(D).forEach(k=>{const b=document.createElement("button");b.className="tab";b.role="tab";b.textContent=k;b.onclick=()=>show(k);tb.appendChild(b)});show("Schools");
+// reveal + counters
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add("in");e.target.querySelectorAll("[data-n]").forEach(c=>{const n=+c.dataset.n,t0=performance.now();(function f(t){const p=Math.min((t-t0)/1500,1);c.textContent=(n*(1-Math.pow(1-p,3))).toFixed(n%1?1:0);if(p<1)requestAnimationFrame(f)})(t0)});io.unobserve(e.target)}),{threshold:.15});
+document.querySelectorAll(".reveal").forEach(e=>io.observe(e));
+// documents
+const dl=$("#dl"),fb='<p class="msg">Documents are shared on request. <a style="color:var(--gold2)" target="_blank" rel="noopener" href="https://wa.me/919655302401?text=Please%20share%20the%20land%20documents%20for%20Majestic%20Meadows">Ask on WhatsApp</a></p>';
+let DB=null,AS=null,OWN=false;
+function fsz(b){return b>1048576?(b/1048576).toFixed(1)+" MB":Math.max(1,Math.round(b/1024))+" KB"}
+function render(snap){
+  dl.textContent="";
+  if(!snap.docs.length){dl.innerHTML=OWN?'<p class="msg">No documents yet. Add your first one below.</p>':fb;return}
+  snap.docs.forEach(s=>{const d=s.data(),c=document.createElement("div");c.className="doc";
+    const h=document.createElement("h3");h.textContent=d.title;
+    const m=document.createElement("small");m.textContent=(d.ext||"").toUpperCase()+" · "+fsz(d.size||0);
+    const r=document.createElement("div");r.className="row";
+    const a=document.createElement("a");a.className="btn";a.textContent="Download";a.href="/_blob/"+d.assetId;a.download=d.title+"."+(d.ext||"pdf");a.target="_blank";a.rel="noopener";const vw=document.createElement("a");vw.className="btn ghost";vw.textContent="View";vw.href="/_blob/"+d.assetId;vw.target="_blank";vw.rel="noopener";r.append(vw,a);
+    if(OWN){const x=document.createElement("button");x.className="btn ghost";x.textContent="Remove";x.onclick=async()=>{if(!confirm("Remove "+d.title+"?"))return;try{await s.ref.delete();if(AS)await AS.delete(d.assetId)}catch(e){alert("Could not remove: "+(e.message||e.code))}};r.appendChild(x)}
+    c.append(h,m,r);dl.appendChild(c)});
+}
+(async()=>{
+  try{const u=await claude.use("user");OWN=u?(await u.isOwner()||await u.canEdit()):false}catch(e){}
+  try{DB=await claude.use("db")}catch(e){}
+  if(!DB){dl.innerHTML=fb;return}
+  const t=setTimeout(()=>{if(dl.querySelector(".msg")&&dl.textContent.includes("Loading"))dl.innerHTML=fb},10000);
+  DB.collection("docs").orderBy("order").onSnapshot(s=>{clearTimeout(t);render(s)},()=>{clearTimeout(t);dl.innerHTML=fb});
+  if(OWN){try{AS=await claude.use("assets")}catch(e){}if(AS)$("#admin").classList.add("on")}
+  $("#up").onsubmit=async e=>{e.preventDefault();const f=$("#df").files[0],um=$("#um"),ub=$("#ub");if(!f||!AS)return;
+    ub.disabled=true;um.textContent="Uploading…";
+    try{const n=(await DB.collection("docs").get()).docs.length;if(n>=10)throw{message:"Limit of 10 documents reached."};
+      const r=await AS.upload(f),id="d"+Date.now();
+      await DB.collection("docs").doc(id).set({title:$("#dt").value.trim(),assetId:r.id,ext:(f.name.split(".").pop()||"pdf").toLowerCase(),size:r.sizeBytes,order:Date.now()});
+      um.textContent="Uploaded.";e.target.reset()}catch(x){um.textContent="Upload failed: "+(x.message||x.code||"try again")}
+    ub.disabled=false};
+})();
+// emi
+const inr=n=>"₹"+Math.round(n).toLocaleString("en-IN");
+function calc(){const P=+price.value,d=+down.value,r=+rate.value/1200,n=+yrs.value*12,L=P*(1-d/100);
+o1.textContent=inr(P);o2.textContent=d+"% ("+inr(P*d/100)+")";o3.textContent=rate.value+"%";o4.textContent=yrs.value+" years";
+$("#emi-out").textContent=inr(L*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1))}
+["price","down","rate","yrs"].forEach(i=>document.getElementById(i).oninput=calc);calc();
+// form
+$("#f").onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);
+const m=`Hi, I am ${f.get("n")} (${f.get("p")}). I am interested in a ${f.get("t")} at Majestic Meadows. ${f.get("m")}`;
+window.open("https://wa.me/919655302401?text="+encodeURIComponent(m),"_blank")};
+</script>
+</body>
+</html>
